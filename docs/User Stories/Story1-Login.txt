@@ -1,0 +1,2 @@
+1. Make an account or  login into app
+(Local Database) As a user, I want to be able to log into my <<whatever this is called>> account so that I can retrieve the calendar playlist. If this is my first time using the application, I should be prompted to make an account using an email and a password and should be asked to create a username. If I enter the wrong username or password, the application should give me an error message such as “Incorrect username or password”. If I enter the correct username and password, I should be directed to the home page.
