@@ -9,14 +9,14 @@
     <link rel="stylesheet" type="text/css" href="spotify.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    
+
     <title>CALLING API</title>
   </head>
-  
-  
+
+
   <body>
     <h1>Calling Spotify API</h1>
-    
+
 
     <!-- Search form -->
   <div>
@@ -26,6 +26,23 @@
   </form>
   </div>
 
+    <script type="text/javascript">
+    var Spotify = require('node-spotify-api');
+
+    var spotify = new Spotify({
+    id: '43ef82781ed44adc848188f762d0c794',
+    secret: '2251afa7505848c3983349c74c4e9b63'
+    });
+
+    spotify.search({ type: 'track', query: 'All the Small Things' }, function(err, data) {
+    if (err) {
+      return console.log('Error occurred: ' + err);
+    }
+
+    console.log(data);
+    });
+
+    </script>
 
 
 
