@@ -1,0 +1,9 @@
+Group 8
+Karen Zheng
+Emily Bennett
+Yuheng Ren
+Leanna Chester
+
+PRIMARY PROPOSAL: Sync spotify with your calendar and get music recommendations based on your schedule. For example, if you are planning to work out/go to the gym, Spotify would recommend you workout playlists. It can also take into account the weather of the user’s location for the day and recommend playlists based on that, for example “Rainy Day Playlist” or “Summer Fun Playlist”. This application would use a weather API and a calendar API, and potentially a music API. Users will have to make a profile and input their location. They would also have to login using Google to import their calendar. The application may be able to get a feel for the user’s preferred genres and further customize music recommendations based on that, or the user would have to initially choose some of their favorite genres of music. 
+
+SECONDARY PROPOSAL: Book recommendations based on past books users have read. This application would work by using a Book API and a location API. Users would have to make a profile and initially choose some genres that they like and some specific books that they have read that they liked. Based on this data, the application would recommend some books that the user may enjoy. In addition to book recommendations, the application can take in the user’s location and show them local stores that carry the book or where they can buy the book online.

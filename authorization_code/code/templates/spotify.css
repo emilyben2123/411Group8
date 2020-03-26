@@ -1,0 +1,38 @@
+h1 {
+    padding-top: 200px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;  
+}
+
+div {
+    display: block;
+    text-align: center;
+    border-color: #1DB954;
+    padding-top: 200px;
+
+}
+
+form {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+#search-input {
+    height: 50px;
+    width: 200px;
+    font: bold 15px arial, sans-serif;
+
+}
+
+#search-button {
+    background-color: #1DB954;
+    color: white;
+    border-style: outset;
+    border-color: white;
+    height: 50px;
+    width: 100px;
+    font: bold 15px arial, sans-serif;
+    text-shadow: none;
+}
