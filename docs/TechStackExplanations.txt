@@ -1,3 +1,3 @@
 Vanilla Javacsript (no frameworks): Frameworks like React have a steep learning curve. We are flexible on this and may adopt new tools as needed.
-Flask: Because all of us know Python and Flask seems relatively simple.
+Node.js : We will be using Node.js for out Framework because it makes it easier for us to interact with our API's. For instance the spotify API we will be demoing today is written with Node.js 
 SQLite: We chose a relational database because our data seems relational and we’re not concerned about scaling. SQLite seems to integrate well with Flask and is convenient for small applications because it does not require a server.
