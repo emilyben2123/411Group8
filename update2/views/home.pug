@@ -1,0 +1,17 @@
+extends layout
+
+block content
+    h1.text-center.homeHeader Today's Tunes
+    br
+    .row
+        .col-md-6
+            button.home-button.playlist-button(href='/importschedule.html')
+                i.fas.fa-bolt
+                br
+                |                 Import Google Calendar
+        .col-md-6
+            button.home-button.tags-button
+                i.fas.fa-clipboard-list
+                br
+                |                 Manage Schedule Manually
+

@@ -1,0 +1,72 @@
+extends layout
+
+block content
+    h1.text-center Tags Page
+
+    textarea#mytext
+    select#dropdown
+        option(value='') None
+        option(value='High Intensity') High Intensity
+        option(value='Low Intensity') Low Intensity
+        option(value='Pushups') Pushups
+        option(value='Cardio') Cardio
+
+    a(href='/search') Click here to search
+
+    br
+    br
+
+    if typeof(songs) !== 'undefined'
+        h3.text-left Search results:
+
+        form(name='searchRes')
+        ul
+            each val in songs
+                input(type='checkbox' name='songTitles' value=val[2])
+                |  #{val[0]} by #{val[1]}
+                br
+        br
+        button(onclick="addSongs()") Add Songs
+
+    if typeof(ids) !== 'undefined'
+        h3.text-left Selections:
+
+        ul
+            each sId in ids
+                li=sId
+
+
+    script(type='text/javascript').
+        var mytextbox = document.getElementById('mytext');
+        var mydropdown = document.getElementById('dropdown');
+        mydropdown.onchange = function () {
+            //mytextbox.value = mytextbox.value + this.value; //to appened
+            mytextbox.innerHTML = this.value;
+        };
+
+        var addSongs = function () {
+            //var songsToAdd = ['Test', 'Hey'];
+            //$.post('/update', {songIds: songsToAdd, tester: 5});
+
+            var songsToAdd = [];
+            $("input:checkbox[name=songTitles]:checked").each(function () {
+                songsToAdd.push($(this).val());
+            });
+            /*
+            console.log(document.getElementById("songTitles"))
+            var songForm = document.forms['searchRes'].elements['songTitles'];
+            console.log(document.forms['searchRes'].elements);
+            var x = $(".searchRes input[type='checkbox']:checked")
+            console.log(x);
+            console.log(songForm);
+            console.log(document.forms['searchRes'].elements['songTitles'])
+            for (var i = 0; i < songForm.length; i++) {
+                if (songForm[i].checked) {
+                    songsToAdd.push(songForm[i].value);
+                }
+            }
+            */
+            console.log(songsToAdd);
+            $.post('/update', {songIds: songsToAdd});
+
+        };

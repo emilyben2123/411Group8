@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<h1>{{say}}</h1>
+<script src="/templates/bundle.js"></script>
+<script>
+var Spotify = require('node-spotify-api');
+var spotify = new Spotify({
+id: '43ef82781ed44adc848188f762d0c794',
+secret: 'SECRET'
+});
+
+spotify.search({ type: 'playlist', query: {{say}} }, function(err, data) {
+if (err) {
+  return console.log('Error occurred: ' + err);
+}
+
+console.log(data.playlists.items[1]);
+});
+</script>
