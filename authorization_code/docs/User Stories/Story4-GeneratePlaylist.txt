@@ -1,2 +1,0 @@
-4. Generate playlist
-As a user, I want to generate playlists pertaining to my schedule for the day so that I have activity-appropriate music. I need to be logged in to all relevant applications. If I try to generate a playlist without being logged into both Google Calendar and Spotify, an appropriate message will be displayed prompting me to add the relevant account(s). When I click a button to generate a playlist, it should open a relevant playlist in the Spotify application so that I can save it.

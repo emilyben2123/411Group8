@@ -1,6 +1,0 @@
-3. Log into spotify -> sync playlist 
-As a user, I want to be able to log into my Spotify account so that I can save playlists.
-I want playlists to be opened in the app. 
-If I do not have a spotify account, will ask if you would like to create an account and bring you to spotify’s create an account page 
-When i enter spotify app I want to be prompted with playlists based on my calendar 
-Maybe option to keep me logged in to spotify on webpage 

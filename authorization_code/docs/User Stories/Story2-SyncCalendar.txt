@@ -1,7 +1,0 @@
-2. Log into calendar -> sync calendar 
-(OAuth) As a user, I want to be able to log into my Google account so that I can retrieve my Google calendar. 
-If I enter my Google credentials incorrectly, I should be prompted to try again.
-I want the changes that I make in my calendar to be reflected in the application.
-I want to see my calendar on the page.
-I want the option to have the application keep me logged in and remember my Google credentials. 
-
