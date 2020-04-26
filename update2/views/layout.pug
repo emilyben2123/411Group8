@@ -1,0 +1,31 @@
+html(lang="en")
+    head
+        title Today's Tunes
+        link(rel='stylesheet' href='/stylesheets/style.css')
+        link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u' crossorigin='anonymous')
+        link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous')
+        script(src="https://code.jquery.com/jquery-2.2.4.js", integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=", crossorigin="anonymous")
+
+    nav.navbar.navStyle.navbar-fixed-top
+        .container
+            .navbar-header
+                a.navbar-brand(href='/home')
+                    img.logo(src='/images/logo.jpg' width='75' height='65' alt='')
+            .navbar-collapse.collapse
+                u1#navList.nav.navbar-nav
+                    li.navLink(style='padding-left:40px')
+                        a(href='/home' class=(name === "home" ? "active-page" : undefined)) Home
+                    li.navLink
+                        a(href='/importschedule' class=(name === "playlist" ? "active-page" : undefined)) Import Schedule
+                    li.navLink
+                        a(href='/tags' class=(name === "tags" ? "active-page" : undefined)) Manage Schedule
+                    li.navLink
+                        a(href='about.html' class=(name === "about" ? "active-page" : undefined)) About
+                span.logstatus
+                    | Welcome,
+                    span#user   #{username}
+
+
+    body
+        .container
+            block content

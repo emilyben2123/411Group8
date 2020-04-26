@@ -1,0 +1,194 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  padding-top: 100px;
+}
+
+a {
+  color: white;
+}
+
+
+/*
+  Navigation Bar Styles
+ */
+
+.logo {
+  border-radius: 10px;
+}
+
+.navStyle {
+  font-family: "Arial";
+  background-color: black;
+  line-height: 150px;
+  height: 95px;
+  align-content: center;
+}
+.navLink {
+  padding: 20px;
+  font-size: 20px;
+}
+
+#navList a:hover {
+  background-color: white;
+  border-radius: 30px;
+}
+
+.active-page {
+  background-color: white;
+  border-radius: 30px;
+}
+
+.logstatus {
+  float: right;
+  color: #337ab7;
+  font-size: 20px;
+  margin-top: -30px;
+}
+
+#user {
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/*
+  Login Page
+ */
+
+.log {
+  width: 400px;
+  height: 200px;
+  background-color: #E5AB46;
+  border-radius: 20px;
+  border-color: black;
+  border-width: 5px;
+  border-style: solid;
+  z-index: 15;
+  top: 50%;
+  left: 50%;
+  margin: -300px 0 0 250px;
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+}
+
+.img-back {
+  background: url(/../images/backdrop-gray.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  /*
+   background: url(/../images/backdrop.jpg);
+  background-size: 1410px 941px;
+  background-repeat: no-repeat;
+  background-position: top;
+  */
+}
+.index-btn {
+  color: white;
+  background-color: black;
+  border-color: black;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 20px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.index-btn:hover {
+  color: black;
+  background-color: white;
+  border-color: black;
+  border-width: 3px;
+  text-decoration: none;
+}
+
+.index-title {
+  color: black;
+}
+
+/*
+  Home Page
+ */
+
+.home-button {
+  border-radius: 60px;
+  border-style: solid;
+  font-size: 50px;
+  display: block;
+  margin: auto;
+  height: 400px;
+  width: 400px;
+}
+
+.home-button i{
+  font-size: 100px;
+  padding-bottom: 50px;
+}
+
+.home-button:hover {
+  border-width: 10px;
+}
+
+.playlist-button {
+  background-color: lightblue;
+  color: white;
+  border-color: lightblue;
+}
+
+.playlist-button:hover {
+  background-color: white;
+  color: lightblue;
+}
+
+.tags-button {
+  background-color: lightgreen;
+  color: white;
+  border-color: lightgreen;
+}
+
+.tags-button:hover {
+  background-color: white;
+  color: lightgreen;
+}
+
+.homeHeader {
+  color: black;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 70px;
+}
+
+/*
+  About Page
+ */
+
+.tuneActiveAbout {
+  color: black;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/*
+  Playlist Page
+ */
+
+.scrollable {
+  overflow: scroll;
+  height: 100%;
+  width: 100%;
+}
